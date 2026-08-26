@@ -1,0 +1,336 @@
+<!--
+██████╗  █████╗ ██████╗  █████╗ ██╗    ██████╗ ██████╗ ██████╗ ███████╗████████╗
+██╔══██╗██╔══██╗██╔══██╗██╔══██╗██║   ██╔════╝██╔═══██╗██╔══██╗██╔════╝╚══██╔══╝
+██████╔╝███████║██║  ██║███████║██║   ██║     ██║   ██║██║  ██║█████╗     ██║   
+██╔══██╗██╔══██║██║  ██║██╔══██║██║   ██║     ██║   ██║██║  ██║██╔══╝     ██║   
+██████╔╝██║  ██║██████╔╝██║  ██║██║   ╚██████╗╚██████╔╝██████╔╝███████╗   ██║   
+╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝    ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝   ╚═╝   
+
+🚀 Badai Codet
+-->
+
+
+
+<!doctype html>
+<html amp lang="id">
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  
+  <title>kakaktua4d | Platform Gaming Premium No.1 Original</title>
+  <meta name="description" content="Kakaktua4d merupakan platform gaming premium teratas rancangan untuk para pemain di Indonesia. Dengan keamanan, kepercayaan terbaik kualitas game tingkat tinggi dan layanan eksklusif, Original Resmi.">
+  <link rel="icon" href="https://ik.imagekit.io/pl13gwt5w/favicon.ico" type="image/x-icon">
+  
+  <link rel="canonical" href="https://kakaktua4d.sbs/">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="robots" content="index, follow, nosnippet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  
+  <style amp-custom>
+    /* Latar Belakang Desktop */
+    body {
+      margin: 0; padding: 0; background-color: #030303;
+      background-image: linear-gradient(rgba(0, 255, 255, 0.05) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 40px 40px; font-family: 'Share Tech Mono', monospace;
+      color: #fff; display: flex; justify-content: center; align-items: center; min-height: 100vh;
+    }
+
+    /* Pembungkus Mode Mobile */
+    .mobile-frame {
+      width: 100%; max-width: 420px; height: 100vh; max-height: 900px;
+      position: relative; background: #000; overflow: hidden;
+      box-shadow: 0 0 40px rgb(0 0 0 / 15%), 0 0 15px rgb(0 0 0 / 10%);
+    }
+    @media (max-width: 480px) { .mobile-frame { max-height: 100vh; box-shadow: none; } }
+
+    /* Efek Kilau Atas & Bawah */
+    .energy-field-top, .energy-field-bottom {
+      position: absolute; left: 0; width: 100%; height: 35%; z-index: 1; pointer-events: none;
+    }
+    .energy-field-top { top: 0; background: radial-gradient(circle at 50% -20%, rgba(136, 134, 134, 0.3) 0%, transparent 80%); }
+    .energy-field-bottom { bottom: 0; background: radial-gradient(circle at 50% 120%, rgba(126, 124, 124, 0.2) 0%, transparent 80%); }
+
+    /* SCANLINES */
+    .scanlines {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.3));
+      background-size: 100% 4px; pointer-events: none; z-index: 2;
+    }
+
+    /* PARTIKEL PETIR JATUH */
+    .falling-sparks {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      z-index: 5; pointer-events: none; overflow: hidden;
+    }
+    .spark {
+      position: absolute; top: -100px; width: 2px; height: 40px;
+      border-radius: 50%; animation: rainDrop linear infinite;
+    }
+    .spark.cyan { background: #ffffff; box-shadow: 0 0 8px #ffffff; }
+    .spark.green { background: #ff0000; box-shadow: 0 0 8px #ff0000; }
+    @keyframes rainDrop {
+      0% { transform: translateY(-100px); opacity: 0; }
+      10% { opacity: 1; height: 50px; }
+      90% { opacity: 1; height: 30px; }
+      100% { transform: translateY(100vh); opacity: 0; }
+    }
+    .spark:nth-child(1) { left: 10%; animation-duration: 2.2s; animation-delay: 0.1s; }
+    .spark:nth-child(2) { left: 25%; animation-duration: 2.8s; animation-delay: 1.2s; }
+    .spark:nth-child(3) { left: 40%; animation-duration: 2.0s; animation-delay: 0.5s; }
+    .spark:nth-child(4) { left: 55%; animation-duration: 3.1s; animation-delay: 1.8s; }
+    .spark:nth-child(5) { left: 70%; animation-duration: 2.5s; animation-delay: 0.8s; }
+    .spark:nth-child(6) { left: 85%; animation-duration: 3.5s; animation-delay: 0.3s; }
+
+    /* =========================================
+       LAYOUT UTAMA (FLEXBOX RESPONSIVE)
+       ========================================= */
+    .ui-layer {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      z-index: 10; display: flex; flex-direction: column;
+      pointer-events: none;
+    }
+
+    /* HEADER SEO HEXTIV */
+    .top-header {
+      width: 100%; padding-top: 20px; pointer-events: auto; z-index: 11;
+    }
+    .top-nav {
+      display: flex; justify-content: center; gap: 25px;
+      font-family: 'Orbitron', sans-serif; font-size: 1.2em; 
+      text-shadow: 0 0 8px rgba(0,0,0,1);
+    }
+    .top-nav span { color: #888; letter-spacing: 2px; }
+    .top-nav span.active { color: #ffffff; text-shadow: 0 0 10px #ffffff; font-weight: bold; border-bottom: 2px solid #ffffff; padding-bottom: 3px;}
+    
+    .landscape-logo {
+      display: flex; justify-content: center; align-items: center;
+      margin-top: 15px; width: 100%; padding: 0 20px; box-sizing: border-box;
+    }
+    .landscape-logo amp-img {
+      width: 100%; max-width: 250px;
+      border-radius: 5px; filter: drop-shadow(0 0 10px rgba(251, 255, 0, 0.6));
+    }
+
+    /* KONTEN TENGAH */
+    .content-wrapper {
+      flex: 1;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 15px;
+      padding: 10px 20px 70px 20px;
+      pointer-events: auto;
+      overflow-y: auto;
+    }
+
+    /* KOTAK BANNER */
+    .banner-container {
+      position: relative; 
+      width: 95%; max-width: 360px;
+      aspect-ratio: 1/1; 
+      display: flex; justify-content: center; align-items: center;
+      padding: 4px; box-sizing: border-box; overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.8); transition: box-shadow 0.3s ease;
+      flex-shrink: 0;
+    }
+    .banner-container::before, .banner-container::after {
+      content: ''; position: absolute; width: 150%; height: 150%;
+      background: conic-gradient(transparent, transparent, transparent, #ffffff);
+      animation: rotateGlow 4s linear infinite;
+    }
+    .banner-container::after {
+      background: conic-gradient(transparent, transparent, transparent, #ff0000); animation-delay: -2s; 
+    }
+    @keyframes rotateGlow { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+    .banner-content {
+      position: relative; width: 100%; height: 100%; background: #111;
+      z-index: 4; border-radius: 2px; overflow: hidden;
+    }
+    .banner-container:hover { box-shadow: 0 0 40px rgba(251, 255, 0, 0.6), 0 0 40px rgba(255, 238, 0, 0.3); }
+
+    /* TOMBOL KIRI & KANAN */
+    .bottom-floating-actions {
+      width: 95%; max-width: 360px;
+      display: flex; flex-direction: row; justify-content: space-between; gap: 10px;
+      flex-shrink: 0;
+    }
+    .action-btn-rect {
+      flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px;
+      padding: 12px 5px; box-sizing: border-box;
+      border: 2px solid; border-radius: 6px; 
+      text-decoration: none; transition: all 0.2s ease;
+      backdrop-filter: blur(5px);
+    }
+    .action-btn-rect:active { transform: scale(0.95); }
+    .action-btn-rect span {
+      font-family: 'Orbitron', sans-serif; font-size: 0.95em; 
+      font-weight: 900; letter-spacing: 0.5px;
+    }
+    .btn-login { 
+      background: rgba(0, 0, 0, 0.85); 
+      border-color: #ffffff; box-shadow: 0 0 10px rgba(255, 115, 0, 0.4), inset 0 0 5px rgba(0,255,255,0.2); 
+    }
+    .btn-login span { color: #ffffff; text-shadow: 0 0 5px #ffffff, 0 0 10px #000; }
+    .btn-daftar { 
+      background: #ff0000; border-color: #ff0000; box-shadow: 0 0 15px rgba(251, 255, 0, 0.6); 
+      animation: pulseGlow 2s infinite; 
+    }
+    .btn-daftar span { color: #000; text-shadow: none; }
+
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 10px rgb(255 255 255 / 60%); transform: scale(1); }
+      50% { box-shadow: 0 0 20px rgb(255 255 255); transform: scale(1.02); }
+      100% { box-shadow: 0 0 10px rgb(255 255 255 / 60%); transform: scale(1); }
+    }
+
+    /* =========================================
+       AREA CAPTION KHAS TIKTOK
+       ========================================= */
+    .tiktok-caption {
+      width: 95%; max-width: 360px;
+      box-sizing: border-box; padding: 5px;
+      text-align: left;
+      flex-shrink: 0;
+    }
+    
+    .tk-caption-text { 
+      margin: 0 0 8px 0; 
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 0.85em; line-height: 1.4; color: #fff; 
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.8); 
+    }
+   /* HASHTAG BERWARNA */
+    .tk-hashtags { 
+      font-weight: bold; 
+      color: rgb(251, 255, 0); /* Warna Cyan Neon untuk efek tautan klik */
+      text-shadow: 0 0 5px rgba(255, 238, 0, 0.4); 
+    }
+    
+    .tk-music {
+      display: flex; align-items: center; gap: 8px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 0.8em; color: #fff; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    }
+    .music-icon { animation: spin 3s linear infinite; }
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+
+    /* =========================================
+       NAVIGASI BAWAH ALA TIKTOK
+       ========================================= */
+    .tiktok-nav {
+      position: absolute; bottom: 0; left: 0; width: 100%; height: 55px;
+      background: rgba(0, 0, 0, 0.95);
+      border-top: 1px solid rgb(255 120 0 / 30%);
+      display: flex; justify-content: space-around; align-items: center;
+      z-index: 30; pointer-events: auto;
+    }
+    .nav-item {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-decoration: none; color: #888; font-family: 'Share Tech Mono', monospace;
+      font-size: 0.6em; gap: 3px; transition: color 0.2s;
+    }
+    .nav-item.active { color: #ffffff; text-shadow: 0 0 5px #ffffff; }
+    .nav-item:hover { color: #fff; }
+    
+    .nav-post {
+      display: flex; justify-content: center; align-items: center;
+      width: 40px; height: 28px; border-radius: 8px;
+      background: linear-gradient(45deg, #ffffff, #ff8c11);
+      color: #000; font-size: 1.3em; font-weight: bold; text-decoration: none;
+      box-shadow: 0 0 8px rgba(255, 141, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="mobile-frame">
+    
+    <div class="energy-field-top"></div>
+    <div class="energy-field-bottom"></div>
+    <div class="scanlines"></div>
+
+    <div class="falling-sparks">
+      <div class="spark cyan"></div>
+      <div class="spark green"></div>
+      <div class="spark cyan"></div>
+      <div class="spark green"></div>
+      <div class="spark cyan"></div>
+      <div class="spark green"></div>
+    </div>
+
+    <div class="ui-layer">
+      
+      <div class="top-header">
+        <div class="top-nav">
+          <span class="nav-item">SITUS</span>
+          <span class="nav-item active">KAKAKTUA4D</span>
+        </div>
+        <div class="landscape-logo">
+          <amp-img src="https://ik.imagekit.io/pl13gwt5w/logo_kakak.webp" width="600" height="150" layout="responsive" alt="Logo Landscape"></amp-img>
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        
+        <div class="banner-container">
+          <div class="banner-content">
+            <amp-img src="https://ik.imagekit.io/pl13gwt5w/kakatua4dd.webp" 
+                     layout="fill" alt="KAKAKTUA4D" style="object-fit: cover;">
+            </amp-img>
+          </div>
+        </div>
+
+        <div class="bottom-floating-actions">
+          <a href="https://1000.skin/kakaktua4dlogin" class="action-btn-rect btn-login" rel="noreferrer noopener">
+            <amp-img src="https://api.iconify.design/mdi:login-variant.svg?color=%230ff" width="20" height="20" layout="fixed" alt="Login"></amp-img>
+            <span>LOGIN</span>
+          </a>
+          <a href="https://1000.skin/kakaktua4dlogin" class="action-btn-rect btn-daftar" rel="noreferrer noopener">
+            <amp-img src="https://api.iconify.design/mdi:account-plus.svg?color=%23000" width="20" height="20" layout="fixed" alt="Daftar"></amp-img>
+            <span>DAFTAR</span>
+          </a>
+        </div>
+
+        <div class="tiktok-caption">
+          <p class="tk-caption-text">
+            <strong>kakaktua4d | Platform Gaming Premium No.1 Original</strong><br>
+            Kakaktua4d merupakan platform gaming premium teratas rancangan untuk para pemain di Indonesia. Dengan keamanan, kepercayaan terbaik kualitas game tingkat tinggi dan layanan eksklusif, Original Resmi.
+            <br>
+            <span class="tk-hashtags">#KAKAKTUA4D</span>
+          </p>
+          
+          <div class="tk-music">
+            <amp-img class="music-icon" src="https://api.iconify.design/mdi:disc.svg?color=%23fff" width="16" height="16" layout="fixed" alt="Music"></amp-img>
+            <span>♫ original sound - KAKAKTUA4D_OFFICIAL</span>
+          </div>
+        </div>
+
+      </div> </div> <div class="tiktok-nav">
+      <a href="https://1000.skin/kakaktua4dlogin" class="nav-item active">
+        <amp-img src="https://api.iconify.design/mdi:home.svg?color=%230ff" width="22" height="22" layout="fixed" alt="Home"></amp-img>
+        <span>Home</span>
+      </a>
+      <a href="https://1000.skin/kakaktua4dlogin" class="nav-item">
+        <amp-img src="https://api.iconify.design/mdi:compass-outline.svg?color=%23888" width="22" height="22" layout="fixed" alt="Discover"></amp-img>
+        <span>Discover</span>
+      </a>
+      <a href="https://1000.skin/kakaktua4dlogin" class="nav-post">
+        <span>+</span>
+      </a>
+      <a href="https://1000.skin/kakaktua4dlogin" class="nav-item">
+        <amp-img src="https://api.iconify.design/mdi:message-outline.svg?color=%23888" width="22" height="22" layout="fixed" alt="Inbox"></amp-img>
+        <span>Inbox</span>
+      </a>
+      <a href="https://1000.skin/kakaktua4dlogin" class="nav-item">
+        <amp-img src="https://api.iconify.design/mdi:account-outline.svg?color=%23888" width="22" height="22" layout="fixed" alt="Profile"></amp-img>
+        <span>Profile</span>
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>
